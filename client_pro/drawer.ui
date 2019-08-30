@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>drawer</class>
+ <widget class="QWidget" name="drawer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>252</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#drawer
+{
+     background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:0.1 rgba(255, 255, 255, 255), stop:0.2 rgba(255, 176, 176, 167), stop:0.3 rgba(255, 151, 151, 92), stop:0.4 rgba(255, 125, 125, 51), stop:0.5 rgba(255, 76, 76, 205), stop:0.52 rgba(255, 76, 76, 205), stop:0.6 rgba(255, 180, 180, 84), stop:1 rgba(255, 255, 255, 0))
+}
+QToolBox::tab {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #E1E1E1, stop: 0.4 #DDDDDD, stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+      border-radius: 5px;
+      color: darkgray;
+  }
+
+QToolBox::tab:selected 
+{ 
+      font:bold;
+      color: white;
+}
+QToolButton 
+{ 
+	  border: 2px solid #8f8f91;
+      border-radius: 6px;
+	  font: 10pt &quot;微软雅黑&quot;;
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #f6f7fa, stop: 1 #dadbde);
+  }
+
+QToolButton:pressed 
+{
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+  /* the subcontrols below are used only in the MenuButtonPopup mode */
+QToolButton::menu-button 
+{
+      border: 2px solid gray;
+     
+}
+QLabel
+{
+	border-radius: 5px;
+    color: darkgray;
+	
+	font: 12pt &quot;Arial&quot;;
+
+}
+
+QGroupBox 
+{
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+      border: 2px solid gray;
+      border-radius: 5px;
+      margin-top: 1ex; /* leave space at the top for the title */
+}
+QGroupBox::title 
+{
+      subcontrol-origin: margin;
+      subcontrol-position: top center; /* position at the top center */
+      padding: 0 3px;
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #FF0ECE, stop: 1 #FFFFFF);
+}
+QGroupBox::indicator
+{
+      width: 13px;
+      height: 13px;
+}
+QGroupBox::indicator:unchecked 
+{
+      image: url(:/images/checkbox_unchecked.png);
+ }
+
+QTabWidget::pane
+{
+	border: 1px;
+	background:transparent;
+}
+QTabWidget::tab-bar
+{
+	background:transparent;
+	subcontrol-position:center;
+}
+ 
+QTabBar::tab
+ 
+{
+min-width:75px;
+min-height:55px;
+background:transparent;
+}
+ 
+QTabBar::tab:selected
+ 
+{
+color: rgb(36,197,219);
+background:transparent;
+}
+ 
+QTabBar::tab:!selected
+ 
+{
+color: white;
+background:transparent;
+}
+QTabBar::tab:hover
+{
+color: rgb(36,197,219);
+background:transparent;
+}
+QLineEdit
+{
+	font: 10pt &quot;微软雅黑&quot;;
+    background:white;
+    padding-left:5px ;
+    padding-top:1px ;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    border: 1px solid rgb(209 , 209 , 209);
+    border-top:transparent;
+}
+QLineEdit:hover
+{
+    padding-top:0px ;
+    border: 1px solid rgb(21 , 131 , 221);
+}
+QPushButton#minimizeButton {
+		border-radius: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: rgb(50, 50, 50);
+		image: url(:/Black/minimize);
+}
+QPushButton#minimizeButton:hover {
+		background: rgb(60, 60, 60);
+		image: url(:/Black/minimizeHover);
+}
+QPushButton#minimizeButton:pressed {
+		background: rgb(55, 55, 55);
+		image: url(:/Black/minimizePressed);
+}
+
+QPushButton#maximizeButton[maximizeProperty=&quot;maximize&quot;] {
+		border-radius: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: rgb(50, 50, 50);
+		image: url(:/Black/maximize);
+}
+QPushButton#maximizeButton[maximizeProperty=&quot;maximize&quot;]:hover {
+		background: rgb(60, 60, 60);
+		image: url(:/Black/maximizeHover);
+}
+QPushButton#maximizeButton[maximizeProperty=&quot;maximize&quot;]:pressed {
+		background: rgb(55, 55, 55);
+		image: url(:/Black/maximizePressed);
+}
+
+QPushButton#maximizeButton[maximizeProperty=&quot;restore&quot;] {
+		border-radius: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: rgb(50, 50, 50);
+		image: url(:/Black/restore);
+}
+QPushButton#maximizeButton[maximizeProperty=&quot;restore&quot;]:hover {
+		background: rgb(60, 60, 60);
+		image: url(:/Black/restoreHover);
+}
+QPushButton#maximizeButton[maximizeProperty=&quot;restore&quot;]:pressed {
+		background: rgb(55, 55, 55);
+		image: url(:/Black/restorePressed);
+}
+
+QPushButton#closeButton {
+		border-radius: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: rgb(50, 50, 50);
+		image: url(:/Black/close);
+}
+QPushButton#closeButton:hover {
+		background: rgb(60, 60, 60);
+		image: url(:/Black/closeHover);
+}
+QPushButton#closeButton:pressed {
+		background: rgb(55, 55, 55);
+		image: url(:/Black/closePressed);
+}
+
+QPushButton#skinButton {
+		border-radius: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: rgb(50, 50, 50);
+		image: url(:/Black/skin);
+}
+QPushButton#skinButton:hover {
+		background: rgb(60, 60, 60);
+		image: url(:/Black/skinHover);
+}
+QPushButton#skinButton:pressed {
+		background: rgb(55, 55, 55);
+		image: url(:/Black/skinPressed);
+}
+
+QPushButton#feedbackButton {
+		border-radius: none;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: rgb(50, 50, 50);
+		image: url(:/Black/feedback);
+}
+QPushButton#feedbackButton:hover {
+		background: rgb(60, 60, 60);
+		image: url(:/Black/feedbackHover);
+}
+QPushButton#feedbackButton:pressed {
+		background: rgb(55, 55, 55);
+		image: url(:/Black/feedbackPressed);
+}
+
+QPushButton#closeTipButton {
+		border-radius: none;
+		border-image: url(:/Black/close);
+		background: transparent;
+}
+QPushButton#closeTipButton:hover {
+		border-image: url(:/Black/closeHover);
+}
+QPushButton#closeTipButton:pressed {
+		border-image: url(:/Black/closePressed);
+}
+
+QPushButton#changeSkinButton{
+		border-radius: 4px;
+		border: 2px solid rgb(41, 41, 41);
+		background: rgb(51, 51, 51);
+}
+QPushButton#changeSkinButton:hover{
+		border-color: rgb(45, 45, 45);
+}
+QPushButton#changeSkinButton:pressed, QPushButton#changeSkinButton:checked{
+		border-color: rgb(0, 160, 230);
+}
+
+QPushButton#transferButton {
+		padding-left: 5px;
+		padding-right: 5px;
+		color: white;
+		background: rgb(0, 165, 235);
+}
+QPushButton#transferButton:hover {
+		background: rgb(0, 180, 255);
+}
+QPushButton#transferButton:pressed {
+		background: rgb(0, 140, 215);
+}
+QPushButton#transferButton[iconProperty=&quot;left&quot;] {
+		qproperty-icon: url(:/Black/left);
+}
+QPushButton#transferButton[iconProperty=&quot;right&quot;] {
+		qproperty-icon: url(:/Black/right);
+}
+
+QPushButton#openButton {
+		border-radius: none;
+		image: url(:/Black/open);
+		background: transparent;
+}
+QPushButton#openButton:hover {
+		image: url(:/Black/openHover);
+}
+QPushButton#openButton:pressed {
+		image: url(:/Black/openPressed);
+}
+
+QPushButton#deleteButton {
+		border-radius: none;
+		image: url(:/Black/delete);
+		background: transparent;
+}
+QPushButton#deleteButton:hover {
+		image: url(:/Black/deleteHover);
+}
+QPushButton#deleteButton:pressed {
+		image: url(:/Black/deletePressed);
+}
+
+QPushButton#menuButton {
+		text-align: left center;
+		padding-left: 3px;
+		color: rgb(175, 175, 175);
+		border: 1px solid rgb(100, 100, 100);
+		background: rgb(72, 72, 73);
+}
+QPushButton#menuButton::menu-indicator{
+        subcontrol-position: right center;
+        subcontrol-origin: padding;
+        image: url(:/Black/arrowBottom);
+        padding-right: 3px;
+}
+</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

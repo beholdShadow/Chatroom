@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/add.jpg</file>
+        <file>Image/alien.jpg</file>
+        <file>Image/artstation.jpg</file>
+        <file>Image/bold.png</file>
+        <file>Image/boy.gif</file>
+        <file>Image/butterfly1.png</file>
+        <file>Image/c++father.jpg</file>
+        <file>Image/c++study.jpg</file>
+        <file>Image/chatQQ.gif</file>
+        <file>Image/clear.png</file>
+        <file>Image/color.png</file>
+        <file>Image/del.jpg</file>
+        <file>Image/down.png</file>
+        <file>Image/face.png</file>
+        <file>Image/favicon.ico</file>
+        <file>Image/Frame.jpg</file>
+        <file>Image/groupchat.jpg</file>
+        <file>Image/groupquit.jpg</file>
+        <file>Image/italic.png</file>
+        <file>Image/Luffy.png</file>
+        <file>Image/LuffyQ.png</file>
+        <file>Image/mario.gif</file>
+        <file>Image/mountain.jpg</file>
+        <file>Image/myheart.png</file>
+        <file>Image/OnePiece.png</file>
+        <file>Image/pic1.png</file>
+        <file>Image/qq.png</file>
+        <file>Image/QT.jpg</file>
+        <file>Image/qt2.png</file>
+        <file>Image/save.png</file>
+        <file>Image/send.png</file>
+        <file>Image/Sinkcity.jpg</file>
+        <file>Image/Snow.jpg</file>
+        <file>Image/Sunny.jpg</file>
+        <file>Image/sunny.png</file>
+        <file>Image/sunset.jpg</file>
+        <file>Image/timg.gif</file>
+        <file>Image/under.png</file>
+        <file>Image/up.png</file>
+    </qresource>
+</RCC>
